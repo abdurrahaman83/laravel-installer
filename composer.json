@@ -1,0 +1,27 @@
+{
+    "name": "abdurrahaman1993/installer",
+    "version" : "1.0",
+    "description": "Installation Service Provider for Laravel Inside application",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Abdurrahaman\\Installer\\": "src/"
+        },
+        "files": [ "src/helpers/helper.php"]
+    },
+    "authors": [
+        {
+            "name": "Abdur Rahaman",
+            "email": "abdur.babu83@gmail.com"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abdurrahaman\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    }
+}
