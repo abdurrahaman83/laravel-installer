@@ -3,6 +3,7 @@
     "version" : "1.2",
     "description": "Installation Service Provider for Laravel Inside application",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Abdurrahaman\\Installer\\": "src/"
