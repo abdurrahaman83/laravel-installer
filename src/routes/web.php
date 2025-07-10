@@ -1,7 +1,8 @@
 <?php
 
-use Abdurrahaman\Installer\Controllers\InstallationController;
 use Illuminate\Support\Facades\Route;
+use Abdurrahaman\Installer\Controllers\InstallationController;
+use Abdurrahaman\Installer\Controllers\PluginInstallControlle;
 
 Route::prefix('install')->group(function(){
     Route::get('/',[InstallationController::class,'index']);
@@ -11,4 +12,7 @@ Route::prefix('install')->group(function(){
     Route::get('user',[InstallationController::class,'user'])->name('install.user');
     Route::post('user/store',[InstallationController::class,'userStore'])->name('install.userStore');
     Route::get('success',[InstallationController::class,'success'])->name('install.success');
+
+
+    Route::post('plugin/install',[PluginInstallControlle::class,'install'])->name('plugin.install');
 });
